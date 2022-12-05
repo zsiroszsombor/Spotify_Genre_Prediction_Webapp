@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 
-loaded_model = pickle.load(open("C:/Users/zsiro/Desktop/Python scripts/spotify_model/trained_model.sav",'rb'))
+loaded_model = pickle.load(open("trained_model.sav",'rb'))
 
 def genre_prediction(input_data):
     input_as_numpy = np.asarray(input_data)
